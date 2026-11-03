@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#080b12">
+<title>Александр Кудинов — GTA RP / Professional Profile</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Oswald:wght@400;500;600;700&display=swap');
+:root{--bg:#080b12;--panel:#101722;--panel2:#141f2e;--text:#eef3f8;--muted:#8b9aab;--lime:#c6ff55;--cyan:#57e1e8;--line:rgba(196,220,244,.13);--glow:0 0 70px rgba(198,255,85,.12)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Manrope,Arial,sans-serif;overflow-x:hidden}body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;background:radial-gradient(ellipse at 78% 10%,rgba(87,225,232,.09),transparent 34%),radial-gradient(ellipse at 12% 48%,rgba(198,255,85,.06),transparent 35%),linear-gradient(rgba(255,255,255,.018) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.018) 1px,transparent 1px);background-size:auto,auto,56px 56px,56px 56px}
+a{color:inherit;text-decoration:none}.wrap{width:min(1160px,calc(100% - 48px));margin:auto}.nav{position:fixed;z-index:20;top:0;left:0;right:0;height:76px;display:flex;align-items:center;border-bottom:1px solid transparent;transition:.3s;background:rgba(8,11,18,.45);backdrop-filter:blur(14px)}.nav.scrolled{border-color:var(--line);background:rgba(8,11,18,.88)}.navin{display:flex;align-items:center;justify-content:space-between}.brand{display:flex;gap:12px;align-items:center;font-weight:800;letter-spacing:.12em;font-size:12px}.brandmark{width:32px;height:32px;border:1px solid var(--lime);display:grid;place-items:center;color:var(--lime);font-family:Oswald;font-size:19px;transform:rotate(45deg)}.brandmark span{transform:rotate(-45deg)}.navlinks{display:flex;gap:28px;color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.12em}.navlinks a:hover{color:var(--lime)}.navcta{border:1px solid rgba(198,255,85,.5);padding:11px 16px;color:var(--lime);font-size:10px;letter-spacing:.14em;text-transform:uppercase}
+.hero{min-height:100vh;display:flex;align-items:center;padding:130px 0 80px;position:relative}.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:50px;align-items:center}.eyebrow{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--lime);display:flex;align-items:center;gap:12px}.eyebrow:before{content:"";width:34px;height:1px;background:var(--lime)}h1,h2,h3,p{margin-top:0}h1{font-family:Oswald,sans-serif;font-size:clamp(56px,8vw,112px);line-height:.92;letter-spacing:-.025em;text-transform:uppercase;margin:26px 0 26px;font-weight:600}h1 span{color:var(--lime);display:block;text-shadow:0 0 45px rgba(198,255,85,.17)}.hero-sub{max-width:590px;color:#a8b5c4;font-size:16px;line-height:1.8}.hero-actions{display:flex;gap:14px;align-items:center;margin-top:34px;flex-wrap:wrap}.btn{padding:15px 20px;background:var(--lime);color:#0a0e14;font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;display:inline-flex;align-items:center;gap:12px;transition:.25s}.btn:hover{transform:translateY(-4px);box-shadow:var(--glow)}.ghost{padding:14px 18px;border:1px solid var(--line);color:var(--text);font-size:11px;letter-spacing:.1em;text-transform:uppercase}.hero-meta{display:flex;gap:30px;margin-top:60px}.meta strong{font:500 30px Oswald;color:var(--text);display:block}.meta small{color:var(--muted);font-size:9px;letter-spacing:.13em;text-transform:uppercase}
+.visual{height:550px;position:relative;display:grid;place-items:center}.orbit{position:absolute;width:430px;height:430px;border:1px solid rgba(198,255,85,.18);border-radius:50%;animation:spin 28s linear infinite}.orbit:before,.orbit:after{content:"";position:absolute;border:1px solid rgba(87,225,232,.16);border-radius:50%;inset:34px}.orbit:after{inset:78px;border-style:dashed}.orbit-dot{position:absolute;width:9px;height:9px;background:var(--lime);border-radius:50%;top:54px;left:85px;box-shadow:0 0 20px var(--lime)}.monogram{font:700 180px Oswald;color:rgba(238,243,248,.055);position:absolute;letter-spacing:-.1em}.profile-card{position:relative;width:310px;padding:28px;background:linear-gradient(145deg,rgba(23,34,49,.95),rgba(11,17,27,.94));border:1px solid rgba(198,255,85,.32);box-shadow:0 30px 100px rgba(0,0,0,.5),var(--glow);transform:rotate(-4deg);animation:float 6s ease-in-out infinite}.card-top{display:flex;justify-content:space-between;color:var(--lime);font-size:9px;letter-spacing:.16em}.card-id{font:600 74px Oswald;line-height:1;margin:35px 0 8px}.card-role{color:#b9c6d5;font-size:12px;line-height:1.6}.card-line{height:1px;background:var(--line);margin:24px 0}.card-foot{display:flex;justify-content:space-between;color:var(--muted);font-size:9px;letter-spacing:.1em}.floating-tag{position:absolute;padding:13px 16px;background:#111b28;border:1px solid var(--line);font-size:10px;letter-spacing:.12em;text-transform:uppercase;box-shadow:0 12px 30px #0005}.tag-a{top:80px;right:0;color:var(--cyan);animation:float 5s ease-in-out infinite}.tag-b{bottom:75px;left:0;color:var(--lime);animation:float 7s ease-in-out infinite reverse}
+.section{padding:110px 0;position:relative}.section-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:48px}.section-kicker{font-size:10px;color:var(--lime);letter-spacing:.2em;text-transform:uppercase;margin-bottom:15px}.section h2{font:600 clamp(36px,5vw,64px)/1 Oswald;text-transform:uppercase;margin:0;max-width:750px}.section-head p{max-width:330px;color:var(--muted);font-size:12px;line-height:1.8;margin:0}.experience{display:grid;grid-template-columns:1fr 1fr;gap:18px}.exp-card{background:linear-gradient(145deg,var(--panel),#0d131d);border:1px solid var(--line);padding:34px;position:relative;overflow:hidden;transition:.35s}.exp-card:hover{transform:translateY(-7px);border-color:rgba(198,255,85,.45);box-shadow:var(--glow)}.exp-card:after{content:attr(data-index);position:absolute;right:20px;bottom:-50px;font:700 190px Oswald;color:rgba(255,255,255,.025)}.exp-label{font-size:10px;letter-spacing:.18em;color:var(--cyan);text-transform:uppercase}.exp-card:nth-child(2) .exp-label{color:var(--lime)}.exp-card h3{font:500 35px Oswald;text-transform:uppercase;margin:16px 0 5px}.exp-date{color:var(--muted);font-size:11px;margin-bottom:25px}.exp-card ul{list-style:none;padding:0;margin:0;position:relative;z-index:1}.exp-card li{padding:12px 0 12px 20px;border-top:1px solid var(--line);font-size:12px;line-height:1.65;color:#b5c1ce;position:relative}.exp-card li:before{content:"";position:absolute;left:0;top:20px;width:5px;height:5px;background:var(--lime)}
+.principle{padding:70px 0;background:linear-gradient(90deg,rgba(198,255,85,.08),transparent 75%);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.quote{font:500 clamp(28px,4vw,52px)/1.2 Oswald;text-transform:uppercase;max-width:970px}.quote em{font-style:normal;color:var(--lime)}.quote-by{margin-top:22px;color:var(--muted);font-size:10px;letter-spacing:.18em;text-transform:uppercase}
+.process{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.step{padding:26px 22px;border:1px solid var(--line);background:rgba(16,23,34,.72);min-height:210px;transition:.3s}.step:hover{background:var(--panel2);transform:translateY(-5px)}.step-num{font:500 30px Oswald;color:var(--lime)}.step h3{font-size:13px;letter-spacing:.1em;text-transform:uppercase;margin:22px 0 10px}.step p{color:var(--muted);font-size:11px;line-height:1.7;margin:0}
+.skills{display:grid;grid-template-columns:1fr 1fr;gap:50px}.skill-list{display:grid;gap:0}.skill{padding:19px 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:20px}.skill strong{font-size:13px}.skill span{font-size:10px;color:var(--muted);text-align:right}.gamebox{padding:30px;background:var(--panel);border:1px solid var(--line)}.gamebox .big{font:500 56px Oswald;color:var(--lime)}.gamebox p{color:var(--muted);font-size:12px;line-height:1.8}.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:22px}.chip{padding:8px 11px;border:1px solid var(--line);font-size:9px;color:#c2ced9;letter-spacing:.08em;text-transform:uppercase}
+.availability{display:grid;grid-template-columns:1fr .8fr;gap:18px}.availability-main,.contact{padding:36px;background:var(--panel);border:1px solid var(--line)}.availability-main h3,.contact h3{font:500 30px Oswald;text-transform:uppercase;margin-bottom:20px}.availability-main p{color:var(--muted);font-size:13px;line-height:1.9;max-width:640px}.shift{display:flex;gap:8px;margin:24px 0;flex-wrap:wrap}.shift span{padding:11px 14px;background:var(--panel2);border:1px solid var(--line);font-size:10px;text-transform:uppercase;letter-spacing:.12em}.contact{background:linear-gradient(145deg,rgba(198,255,85,.1),var(--panel) 60%);border-color:rgba(198,255,85,.25)}.contact p{color:var(--muted);font-size:12px;line-height:1.8}.contact .btn{margin-top:15px}
+.footer{padding:35px 0;border-top:1px solid var(--line);color:var(--muted);font-size:9px;letter-spacing:.12em;text-transform:uppercase}.footer .wrap{display:flex;justify-content:space-between;gap:20px}
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s ease}.reveal.visible{opacity:1;transform:none}
+.cursor-glow{position:fixed;width:280px;height:280px;border-radius:50%;background:radial-gradient(circle,rgba(198,255,85,.055),transparent 68%);pointer-events:none;z-index:-1;transform:translate(-50%,-50%)}
+@keyframes spin{to{transform:rotate(360deg)}}@keyframes float{0%,100%{translate:0 0}50%{translate:0 -14px}}
+@media(max-width:850px){.navlinks{display:none}.hero-grid{grid-template-columns:1fr}.hero{padding-top:130px}.visual{height:440px}.orbit{width:340px;height:340px}.profile-card{width:275px}.experience,.skills,.availability{grid-template-columns:1fr}.process{grid-template-columns:1fr 1fr}.section-head{display:block}.section-head p{margin-top:20px}.hero-meta{margin-top:40px}}
+@media(max-width:520px){.wrap{width:min(100% - 32px,1160px)}.hero-sub{font-size:14px}.visual{height:360px}.orbit{width:285px;height:285px}.profile-card{width:240px;padding:22px}.card-id{font-size:60px}.tag-a{right:-5px;top:20px}.tag-b{left:-5px;bottom:15px}.process{grid-template-columns:1fr}.section{padding:78px 0}.exp-card{padding:25px}.hero-meta{gap:18px}.meta strong{font-size:25px}.footer .wrap{display:block}.footer span{display:block;margin-top:8px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div class="cursor-glow" id="glow"></div>
+<nav class="nav" id="nav"><div class="wrap navin">
+  <a class="brand" href="#top"><span class="brandmark"><span>А</span></span><span>PROFILE / GTA RP</span></a>
+  <div class="navlinks"><a href="#experience">Опыт</a><a href="#approach">Подход</a><a href="#skills">Компетенции</a><a href="#contact">Контакт</a></div>
+  <a class="navcta" href="#contact">Обсудить сотрудничество ↗</a>
+</div></nav>
+<main id="top">
+<section class="hero"><div class="wrap hero-grid">
+  <div>
+    <div class="eyebrow">Кандидатура · 2026</div>
+    <h1>Управление<span>игровыми</span>проектами</h1>
+    <p class="hero-sub">Опыт в SA-MP с 2012 года. Управление административным составом, развитие игровых проектов и организация процессов. Мой фокус — сильная команда, понятные зоны ответственности и стабильная работа проекта.</p>
+    <div class="hero-actions"><a class="btn" href="#experience">Изучить опыт <b>↘</b></a><a class="ghost" href="#contact">Связаться</a></div>
+    <div class="hero-meta">
+      <div class="meta"><strong>2012</strong><small>В SA-MP</small></div>
+      <div class="meta"><strong>1+ год</strong><small>Спец. администратор</small></div>
+      <div class="meta"><strong>Co-owner</strong><small>Опыт совладения</small></div>
+    </div>
+  </div>
+  <div class="visual">
+    <div class="orbit"><i class="orbit-dot"></i></div><div class="monogram">AK</div>
+    <div class="profile-card">
+      <div class="card-top"><span>ADMINISTRATION / MANAGEMENT</span><span>№ 001</span></div>
+      <div class="card-id">ALEX</div>
+      <div class="card-role">SPECIAL ADMINISTRATOR<br>PROJECT MANAGEMENT</div>
+      <div class="card-line"></div>
+      <div class="card-foot"><span>PEOPLE</span><span>PROCESS</span><span>RESULT</span></div>
+    </div>
+    <div class="floating-tag tag-a">● Team coordination</div><div class="floating-tag tag-b">✳ Structured management</div>
+  </div>
+</div></section>
+
+<section class="section" id="experience"><div class="wrap">
+  <div class="section-head reveal"><div><div class="section-kicker">01 / Experience</div><h2>Опыт, подтверждённый практикой</h2></div><p>Два проекта и два разных уровня ответственности: управление административной командой и участие в управлении проектом целиком.</p></div>
+  <div class="experience">
+    <article class="exp-card reveal" data-index="01">
+      <div class="exp-label">UNION RP / REVENT</div><h3>Специальный администратор</h3><div class="exp-date">Более одного года</div>
+      <ul>
+        <li>Полное курирование административного состава: набор, отбор, распределение и координация сотрудников.</li>
+        <li>Организация взаимодействия с главным администратором и его заместителями; участие в ключевых кадровых назначениях.</li>
+        <li>Связующее звено между администрацией и разработчиками: формулирование запросов на исправления и доработки.</li>
+        <li>Подключение к сложным жалобам и конфликтам, требовавшим вмешательства руководства.</li>
+        <li>Выстраивание рабочих процессов и делегирование текущих задач ответственным руководителям.</li>
+      </ul>
+    </article>
+    <article class="exp-card reveal" data-index="02">
+      <div class="exp-label">UNION RP / СОБСТВЕННЫЙ ПРОЕКТ</div><h3>Совладелец проекта</h3><div class="exp-date">Ориентировочно 2016–2017</div>
+      <ul>
+        <li>Участие в приобретении проекта и принятии ключевых управленческих решений.</li>
+        <li>Координация административного направления и перестройка работы команды.</li>
+        <li>Совместно с партнёром наведение порядка в административном составе за одну-две недели.</li>
+        <li>Участие в организации разработки: постановка задач, формулирование необходимых исправлений и улучшений.</li>
+        <li>Участие в продвижении проекта, включая закупку рекламы и организационные вопросы.</li>
+      </ul>
+    </article>
+  </div>
+</div></section>
+
+<section class="principle"><div class="wrap reveal">
+  <div class="section-kicker">My management philosophy</div>
+  <div class="quote">«Задача руководителя — не выполнять работу за всех. Его задача — <em>выстроить систему,</em> в которой каждый знает свою роль и отвечает за результат».</div>
+  <div class="quote-by">Подход к управлению административным составом</div>
+</div></section>
+
+<section class="section" id="approach"><div class="wrap">
+  <div class="section-head reveal"><div><div class="section-kicker">02 / Management approach</div><h2>Сначала структура. Затем скорость.</h2></div><p>Рабочая администрация строится не на количестве выданных прав, а на понятных процессах, ответственности и коммуникации.</p></div>
+  <div class="process">
+    <div class="step reveal"><div class="step-num">01</div><h3>Отбор</h3><p>Подбирать людей по ответственности, адекватности и готовности работать в команде.</p></div>
+    <div class="step reveal"><div class="step-num">02</div><h3>Распределение</h3><p>Закреплять роли и зоны ответственности, избегать хаоса и дублирования задач.</p></div>
+    <div class="step reveal"><div class="step-num">03</div><h3>Делегирование</h3><p>Доверять руководителям направлений текущую работу и давать им необходимые полномочия.</p></div>
+    <div class="step reveal"><div class="step-num">04</div><h3>Контроль</h3><p>Следить за дисциплиной, качеством исполнения и тем, как команда взаимодействует между собой.</p></div>
+  </div>
+</div></section>
+
+<section class="section" id="skills"><div class="wrap">
+  <div class="section-head reveal"><div><div class="section-kicker">03 / Competencies</div><h2>Что я привношу в команду</h2></div><p>Управленческий опыт в сочетании с пониманием специфики SA-MP и RP-сообщества.</p></div>
+  <div class="skills">
+    <div class="skill-list reveal">
+      <div class="skill"><strong>Управление людьми и HR-процессы</strong><span>Набор / отбор / адаптация</span></div>
+      <div class="skill"><strong>Организация административной работы</strong><span>Форум / задачи / дисциплина</span></div>
+      <div class="skill"><strong>Делегирование и контроль</strong><span>ГА / ЗГА / руководители</span></div>
+      <div class="skill"><strong>Коммуникация с разработкой</strong><span>Запросы / приоритеты / обратная связь</span></div>
+      <div class="skill"><strong>Сложные обращения и конфликты</strong><span>Эскалация / разбор / решение</span></div>
+    </div>
+    <div class="gamebox reveal">
+      <div class="big">14 YEARS*</div>
+      <p>*С 2012 года в SA-MP-сообществе. Игровой опыт на проектах с разными подходами к RP, правилам и организации игрового процесса.</p>
+      <div class="chips"><span class="chip">SAMP-RP</span><span class="chip">ADVANCE-RP</span><span class="chip">DIAMOND-RP</span><span class="chip">PROJECT STARTUPS</span></div>
+    </div>
+  </div>
+</div></section>
+
+<section class="section" id="contact"><div class="wrap">
+  <div class="section-head reveal"><div><div class="section-kicker">04 / Cooperation</div><h2>Формат сотрудничества</h2></div><p>Заинтересован в проекте, где ценят ответственность, прозрачные процессы и вклад в развитие команды.</p></div>
+  <div class="availability">
+    <div class="availability-main reveal">
+      <h3>Доступность и график</h3>
+      <p>Работаю по сменному графику. Могу выделять время после дневной смены, перед ночной сменой и в выходные. В рабочее время — по возможности проверять форум и рабочие площадки.</p>
+      <div class="shift"><span>День</span><span>Ночь</span><span>Отсыпной</span><span>Выходной</span></div>
+      <p>Не рассматриваю формат постоянного присутствия 24/7. Предпочитаю заранее согласовать задачи, зоны ответственности и реалистичный график, чтобы обеспечивать стабильный результат.</p>
+    </div>
+    <div class="contact reveal">
+      <div class="section-kicker">Let's talk</div><h3>Открыт к диалогу</h3>
+      <p>Готов обсудить задачи проекта, полномочия, формат взаимодействия и условия сотрудничества.</p>
+      <p><b style="color:var(--text)">Александр Кудинов</b><br>
+      <a href="https://vk.ru/quexbull" target="_blank" rel="noopener">ВКонтакте ↗</a><br>
+      <a href="https://t.me/quexbull" target="_blank" rel="noopener">Telegram ↗</a></p>
+      <a class="btn" href="https://t.me/quexbull" target="_blank" rel="noopener">Связаться ↗</a>
+    </div>
+  </div>
+</div></section>
+</main>
+<footer class="footer"><div class="wrap"><span>Professional profile / GTA RP</span><span>People · Process · Result / 2026</span></div></footer>
+<script>
+const nav=document.getElementById('nav'),glow=document.getElementById('glow');
+window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',window.scrollY>30));
+window.addEventListener('pointermove',e=>{glow.style.left=e.clientX+'px';glow.style.top=e.clientY+'px'});
+const obs=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+</script>
+</body></html>
